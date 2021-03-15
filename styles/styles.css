@@ -3,6 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    text-align: center;
     /* Add primary colours below */ 
 }
 
@@ -28,17 +29,16 @@ html, body {
 }
 
 .main-header {
-  position: fixed;
   top: 0;
   right: 0;
   width: 100%;
-  z-index: 1;
+
 }
 .main-nav {
     text-align: right;
     font-size: 1.1em;
     font-weight: lighter;
-    background: white;
+    background:#12110e;
     
 }
 
@@ -47,7 +47,7 @@ html, body {
     
 }
 .main-nav a {
-  color: black;
+  color: white;
 }
 
 .nav a:hover {
@@ -58,6 +58,7 @@ html, body {
   background-color: #12110e;
   color: white;
   padding: .25em 0;
+  height: 300px;
 }
 
 .main-footer-container {
@@ -68,6 +69,46 @@ html, body {
 .main-footer-container ul {
   flex-grow: 1;
   text-align: end;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5em;
+}
+
+.www-container {
+  display: flex;
+  justify-content: center;
+}
+
+.www-card {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  border-radius: 3%;
+  
+}
+
+.www-card p {
+  font-size: 1.2em;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  margin: 0;
+  background-color: #12110e;
+  color: white;
+
+}
+
+.testimonial {
+
 }
 
 .footer-nav li {
