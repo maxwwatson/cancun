@@ -183,10 +183,12 @@ div i {
 
 .vector-image1 {
   max-width: 600px;
+  max-height: 100%;
 }
 
 .vector-image2 {
   max-width: 600px;
+  max-height: 100%;
 }
 .activities-text {
   max-width: 500px;
@@ -321,19 +323,22 @@ div i {
 
     }
     .main-nav {
-      a
+      
     }
     .nav ul {
       margin: 0;
       display: flex;
       flex-direction: column;
-  }
-  .cancun-title {
-    padding: 0;
-  }
-  
-  .nav li {
-      display: inline;
-      
-  }
+    }
+    .cancun-title {
+      padding: 0;
+    }
+    
+    .nav li {
+        display: inline;
+        
+    }
+    .text {
+      font-size: 1.3em;
+    }
   }
