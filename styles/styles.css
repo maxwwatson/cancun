@@ -184,11 +184,13 @@ div i {
 .vector-image1 {
   max-width: 600px;
   max-height: 100%;
+  object-fit: cover;
 }
 
 .vector-image2 {
   max-width: 600px;
   max-height: 100%;
+  object-fit: cover;
 }
 .activities-text {
   max-width: 500px;
