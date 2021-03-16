@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 * {
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     /* Add primary colours below */ 
 }
@@ -14,6 +15,7 @@ html, body {
 
 .nav ul {
     margin: 0;
+    display: flex;
 }
 
 .nav li {
@@ -21,24 +23,38 @@ html, body {
     
 }
 
+a {
+  text-decoration: none;
+}
+
 .nav a {
     display: inline-block;
     padding: .5em;
-    color: black;
     text-decoration: none;
 }
 
 .main-header {
+  display: flex;
+  justify-content: space-between;
   top: 0;
   right: 0;
+  padding: 0 200px;
   width: 100%;
+  background:#12110e;
 
 }
+
+.cancun-title {
+  color: white;
+}
+
 .main-nav {
     text-align: right;
     font-size: 1.1em;
     font-weight: lighter;
     background:#12110e;
+    display: flex;
+    align-items: center;
     
 }
 
@@ -50,6 +66,9 @@ html, body {
   color: white;
 }
 
+.cancun-title:hover {
+  color: rgb(155, 4, 4);
+}
 .nav a:hover {
     color: rgb(155, 4, 4);
 }
@@ -57,13 +76,18 @@ html, body {
 .main-footer {
   background-color: #12110e;
   color: white;
-  padding: .25em 0;
+  padding: 20px;
   height: 300px;
 }
 
 .main-footer-container {
   display: flex;
   align-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 0 1.5em;
 }
 
 .main-footer-container ul {
@@ -74,6 +98,7 @@ html, body {
 .container {
   max-width: 900px;
   margin: 0 auto;
+  justify-content: center;
   padding: 0 1.5em;
 }
 
@@ -83,13 +108,27 @@ html, body {
 }
 
 .www-card {
+  display: flex;
+  flex-direction: column;
   margin: 10px;
+  padding: 10px;
   width: 300px;
   height: 300px;
-  border: 1px solid black;
   border-radius: 3%;
+  margin: 40px 40px;
+  box-shadow:
+  0 5.3px 3.6px rgba(0, 0, 0, 0.059),
+  0 14.7px 9.9px rgba(0, 0, 0, 0.085),
+  0 35.3px 23.8px rgba(0, 0, 0, 0.111),
+  0 117px 79px rgba(0, 0, 0, 0.17)
+;
   
 }
+
+div i {
+  font-size: 3em;
+}
+
 
 .www-card p {
   font-size: 1.2em;
@@ -100,7 +139,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 300px;
   margin: 0;
   background-color: #12110e;
   color: white;
@@ -109,6 +148,17 @@ html, body {
 
 .testimonial {
 
+}
+
+.adventure-container {
+  display: flex;
+  justify-content: center;
+}
+.adventures {
+  display: flex;
+  margin: 30px;
+  flex-direction: column;
+  max-width: 500px;
 }
 
 .footer-nav li {
@@ -125,6 +175,27 @@ html, body {
 .wrapperdiv {
   position: relative;
   top: -15px;
+}
+
+.vector-image1 {
+  max-width: 600px;
+}
+
+.vector-image2 {
+  max-width: 600px;
+}
+.activities-text {
+  max-width: 600px;
+}
+
+.activities {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adventure-img {
+  border-radius: 3%;
 }
 
 /* ****************************************************** */
@@ -171,6 +242,9 @@ html, body {
     border-radius: 3px 0 0 3px;
   }
   
+  .prev {
+    left: 0;
+  }
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
