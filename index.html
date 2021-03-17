@@ -15,7 +15,7 @@
     <header class="main-header ">
         <h1 ><a href="index.html" name="top" class="cancun-title">Cancun</a></h1>
         <nav class="nav main-nav">
-            <ul>
+            <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#activities">Activities</a></li>
                 <li><a href="#adventures">Adventures</a></li>
@@ -23,6 +23,25 @@
             </ul>
         </nav>
     </header>
+
+    <!-- Mobile Header-->
+    <nav role="navigation" class="navMobile">
+        <div id="menuToggle">
+          <input type="checkbox" style="display: inline-block;"/>
+            <span></span>
+            <span></span>
+            <span></span>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#adventures">Adventures</a></li>
+            <li><a href="#cost">Cost</a></li>
+        </ul>
+        
+       </div>
+       <h1 style="position: absolute; left: 40%; top: 0px;"><a href="index.html" name="top" class="cancun-title">Cancun</a></h1>
+      </nav>
+
 
     <!-- Slideshow container -->
     <div class="slideshow-dots-container">
@@ -85,34 +104,36 @@
         <a name="activities"></a>
     </div>
     <section>
-        <div class="activities">
+        <div class="activities1">
             <img src="images/woman-floaty-beach.svg" alt="woman on floaty on beach" class="vector-image1">
             <div class="activities-text">
                 <h2>Beaches</h2>
                 <p>Relax on the beautiful beaches of Cancun, with a friendly drink carrying server never too far away </p>
-                </div>
+            </div>
         </div>
-        <div class="activities">
+        <div class="activities2">
+            <img src="images/volleyball.svg" alt="" class="vector-image2">
             <div class="activities-text">
                 <h2>Activities</h2>
                 <p>Volleyball? Sea-dooing? Foam parties? The resort is full of things to do </p>
-                </div>
-            <img src="images/volleyball.svg" alt="" class="vector-image2">
+            </div>
+            
         </div>
-        <div class="activities">
+        <div class="activities1">
             <img src="images/woman-hammock.svg" alt="" class="vector-image1">
             <div class="activities-text">
                 <h2>Chill</h2>
                 <p>Relax the day away on the many hammocks and chairs by the beach </p>
             </div>
         </div>
-        <div class="activities">
+        <div class="activities2">
+            <img src="images/women-beer.svg" alt="" class="vector-image2">
             <div class="activities-text">
                 <h2>Drink</h2>
                 <p>On the resort, bars and poolbars are aplenty.</p>
                 <p>Want to party harder? Spent the night in downtown Cancun, where the drinks are cheap and the tacos are many</p>
-                </div>
-            <img src="images/women-beer.svg" alt="" class="vector-image2">
+            </div>
+            
         </div>
     </section>
 
@@ -128,18 +149,19 @@
     </div>
     <section>
         <h1>Explore Mexico</h1>
+        <p>Click image to read more</p>
         <div class="adventure-container">
             <div class="adventures">
 
-                <img src="images/cenote-4x3.jpg" alt="mexican cenote" class="adventure-img">
+               <a href="https://www.thrillist.com/travel/nation/the-most-gorgeous-mexican-cenotes-near-cancun-cozumel-and-chichen-itza" target="#blank"><img src="images/cenote-4x3.jpg" alt="mexican cenote" class="adventure-img"></a>
                 <h3>Cenotes</h3>
             </div>
             <div class="adventures">
-                <img src="images/mexican-pyramid-4x3.jpg.png" alt="" class="adventure-img">
+                <a href="https://www.afar.com/magazine/the-top-10-pyramids-in-mexico" target="#blank"><img src="images/mexican-pyramid-4x3.jpg.png" alt="" class="adventure-img"></a> 
                 <h3>Ancient Ruins</h3>
             </div>
             <div class="adventures">
-                <img src="images/snorkling-4x3.png" alt="snorkling" class="adventure-img">
+                <a href="https://www.tripsavvy.com/the-best-snorkeling-in-mexico-4155335" target="#blank"><img src="images/snorkling-4x3.png" alt="snorkling" class="adventure-img"></a> 
                 <h3>Snorkling</h3>
             </div>
         </div>
@@ -149,19 +171,22 @@
     <div class="wrapperdiv">
         <a name="cost"></a>
     </div> 
-    <h1>Cost</h1>
+    <h1 class="testimonial-container">Cost</h1>
     <section class="www-container">
         <div class="www-card">
             <h2>Flight</h2>
             <p>$500 - $750</p>
+            <i class="fas fa-plane"></i>
         </div>
         <div class="www-card">
             <h2>Resort</h2>
-            <p>$1000 - $1250</p>
+            <p>$500-$850</p>
+            <i class="fas fa-hotel"></i>
         </div>
         <div class="www-card">
             <h2>Total</h2>
-            <p>$1500 - $2000</p>
+            <p>$1000 - $1600</p>
+            <i class="fas fa-glass-cheers"></i>
         </div>
     </section>
 
@@ -169,20 +194,26 @@
     <a name="call-to-action"></a>
     <section>
         <div>
-            <h1>What are you waiting for?</h1>
-            <!-- TODO: add fun images-->
+            <h1 style="font-size: 50px;">What are you waiting for?</h1>
+            <a href="https://shopping.selloffvacations.com/cgi-bin/resultspackage-plus.cgi?&language=en&alias=drv&code_ag=drv&dest=resultspackage-plus.cgi&gateway_dep=YWG&dest_dep=2_24_3049111&date_dep=2021/11/20&duration=7&nb_rooms=1&nb_adult_forf=1" target="#blank"><img src="images/sell-off-vactions.jpg" alt="tequila in mexico"  class="sell-off-vacations"></a>
+            <img src="images/tequila.jpg" alt="tequila in mexico"  class="tequila">
             <!-- TODO: add link to activities-->
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="main-footer">
-        <div class=" main-footer-container">
-            <h3><a href="#top" class="cancun-title">Top</a></h3>
-            <a href="https://storyset.com/sport" style="font-size: 15px;">Illustration by Freepik Storyset</a>
+        <div class=" nav  main-footer-container">
             <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#adventures">Adventures</a></li>
+                <li><a href="#cost">Cost</a></li>
             </ul>
+            <a href="https://storyset.com/" style="font-size: 10px; color: grey">Art Illustration by Freepik Storyset</a>
+            <p style="font-size: 10px; color: grey">Designed by Max Watson</p>
         </div>
+        
     </footer>
 
     
